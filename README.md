@@ -42,7 +42,7 @@ UTC Time Looker is a macOS desktop utility that converts UTC time strings to mul
 
 ## Installation
 
-### Option 1: Build from Source
+### Build from Source
 
 1. Clone the repository:
 ```bash
@@ -60,8 +60,7 @@ open UTCTimeLooker.xcodeproj
 xcodebuild -project UTCTimeLooker.xcodeproj -scheme UTCTimeLooker -configuration Release build
 ```
 
-### Option 2: Download Pre-built App
-Download the latest release from the [Releases](https://github.com/yourusername/UTCTimeLooker/releases) page.
+
 
 ## Usage
 
@@ -96,7 +95,7 @@ UTCTimeLooker/
 ## Development
 
 ### Prerequisites
-- Xcode 16.4+
+- Xcode 16.0+
 - Swift 5.0+
 - macOS 15.5+ SDK
 
@@ -150,7 +149,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have suggestions:
 - Open an [issue](https://github.com/yourusername/UTCTimeLooker/issues)
-- Contact: your.email@example.com
+- Contact: lzkhaoshua@gmail.com
 
 ---
 

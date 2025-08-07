@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4652AC412E44515800098061 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = 4652AC402E44515800098061 /* TODO.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4646456B2E3786FD00A48FDB /* UTCTimeLooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTCTimeLooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4652AC402E44515800098061 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		464645622E3786FD00A48FDB = {
 			isa = PBXGroup;
 			children = (
+				4652AC402E44515800098061 /* TODO.md */,
 				4646456D2E3786FD00A48FDB /* UTCTimeLooker */,
 				4646456C2E3786FD00A48FDB /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4652AC412E44515800098061 /* TODO.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

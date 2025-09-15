@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @StateObject private var viewModel = TimeZoneViewModel()
     @FocusState private var isInputFocused: Bool
+    private let demoData = "2025-07-28T14:30:00Z"
     
     var body: some View {
         ScrollView{
@@ -33,12 +35,21 @@ struct ContentView: View {
                         .foregroundColor(.primary)
                     
                     HStack {
-                        TextField("2025-07-28T14:30:00Z", text: $viewModel.utcInput)
+                        TextField(demoData, text: $viewModel.utcInput)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .focused($isInputFocused)
                             .onChange(of: viewModel.utcInput) { _, newValue in
                                 viewModel.parseUTCInput(newValue)
                             }
+                        
+                        Button(action: {
+                            
+                        }) {
+                            Image(systemName: "document.on.document")
+                                .font(.title3)
+                        }
+                        .buttonStyle(BorderedButtonStyle())
+                        .help("Copy form clipboard")
                         
                         Button(action: {
                             viewModel.refreshWithCurrentTime()

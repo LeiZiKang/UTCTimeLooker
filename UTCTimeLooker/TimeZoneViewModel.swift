@@ -37,6 +37,14 @@ class TimeZoneViewModel: ObservableObject {
         return formatter
     }()
     
+    // e.g., "2025-09-12 07:46:13.319" (milliseconds, no timezone -> treated as UTC)
+    private let millisecondsNoTZFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    
     private let extendedFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSSXXX"
@@ -105,6 +113,14 @@ class TimeZoneViewModel: ObservableObject {
             return
         }
         
+        // Try parsing as simplified format with milliseconds (no timezone)
+        if let date = millisecondsNoTZFormatter.date(from: trimmedInput) {
+            parsedDate = date
+            isValidInput = true
+            saveInput(input)
+            return
+        }
+        
         // Try parsing as extended format with milliseconds and timezone
         if let date = extendedFormatter.date(from: trimmedInput) {
             parsedDate = date
@@ -122,7 +138,7 @@ class TimeZoneViewModel: ObservableObject {
         }
         
         // If all parsing fails, show error
-        errorMessage = "Invalid format. Use: 2025-07-28T14:30:00Z, 2025-07-28 14:30:00, 2025-08-02 03:56:00+00, or Unix timestamp"
+        errorMessage = "Invalid format. Use: 2025-07-28T14:30:00Z, 2025-07-28 14:30:00, 2025-07-28 14:30:00.123, 2025-08-02 03:56:00+00, or Unix timestamp"
     }
     
     private func saveInput(_ input: String) {

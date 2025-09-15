@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @StateObject private var viewModel = TimeZoneViewModel()
     @FocusState private var isInputFocused: Bool
+    
     private let demoData = "2025-07-28T14:30:00Z"
     
     var body: some View {
@@ -43,13 +44,16 @@ struct ContentView: View {
                             }
                         
                         Button(action: {
-                            
+                            if let clipboardString = NSPasteboard.general.string(forType: .string) {
+                                viewModel.utcInput = clipboardString
+                                viewModel.parseUTCInput(clipboardString)
+                            }
                         }) {
-                            Image(systemName: "document.on.document")
+                            Image(systemName: "doc.on.clipboard")
                                 .font(.title3)
                         }
                         .buttonStyle(BorderedButtonStyle())
-                        .help("Copy form clipboard")
+                        .help("Paste from clipboard")
                         
                         Button(action: {
                             viewModel.refreshWithCurrentTime()

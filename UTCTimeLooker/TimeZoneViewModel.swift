@@ -8,13 +8,14 @@ struct TimeZoneInfo {
     let identifier: String
 }
 
-class TimeZoneViewModel: ObservableObject {
-    @Published var utcInput: String = ""
-    @Published var parsedDate: Date?
-    @Published var errorMessage: String = ""
-    @Published var isValidInput: Bool = false
+@Observable
+class TimeZoneViewModel {
+    public var utcInput: String = ""
+    public var parsedDate: Date?
+    public var errorMessage: String = ""
+    public var isValidInput: Bool = false
     
-    let predefinedTimeZones: [TimeZoneInfo] = [
+    public let predefinedTimeZones: [TimeZoneInfo] = [
         TimeZoneInfo(name: "China", flag: "🇨🇳", timeZone: TimeZone(identifier: "Asia/Shanghai")!, identifier: "Asia/Shanghai"),
         TimeZoneInfo(name: "Hong Kong", flag: "🇭🇰", timeZone: TimeZone(identifier: "Asia/Hong_Kong")!, identifier: "Asia/Hong_Kong"),
         TimeZoneInfo(name: "US East", flag: "🇺🇸", timeZone: TimeZone(identifier: "America/New_York")!, identifier: "America/New_York"),

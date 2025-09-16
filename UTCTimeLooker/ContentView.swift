@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject private var viewModel = TimeZoneViewModel()
+    @State private var viewModel = TimeZoneViewModel()
     @FocusState private var isInputFocused: Bool
     
     private let demoData = "2025-07-28T14:30:00Z"

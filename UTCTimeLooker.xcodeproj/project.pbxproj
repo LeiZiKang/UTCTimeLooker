@@ -32,6 +32,7 @@
 		46C2EC782EE01AD000E38D8B /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
 		46C2EC7B2EE01B4E00E38D8B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		46C2EDC52EE03A2600E38D8B /* UTCTimeCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UTCTimeCore; path = Packages/UTCTimeCore; sourceTree = "<group>"; };
+		46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTCTimeLookeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E5EB8A2E78117400F4615F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46E5EB8C2E78117E00F4615F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		46E5EB8E2E78146200F4615F /* RealseNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RealseNote.md; sourceTree = "<group>"; };
@@ -44,6 +45,11 @@
 			path = UTCTimeLooker;
 			sourceTree = "<group>";
 		};
+		46C2EDD02EE03C0100E38D8B /* UTCTimeLookeriOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UTCTimeLookeriOS;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C2EDC82EE03A4600E38D8B /* UTCTimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C2EDCC2EE03C0100E38D8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 				46E5EB8A2E78117400F4615F /* README.md */,
 				46E5EB8E2E78146200F4615F /* RealseNote.md */,
 				4646456D2E3786FD00A48FDB /* UTCTimeLooker */,
+				46C2EDD02EE03C0100E38D8B /* UTCTimeLookeriOS */,
 				4646456C2E3786FD00A48FDB /* Products */,
 				46C2EDC52EE03A2600E38D8B /* UTCTimeCore */,
 				46C2EDC62EE03A4600E38D8B /* Frameworks */,
@@ -88,6 +102,7 @@
 			children = (
 				4646456B2E3786FD00A48FDB /* UTCTimeLooker.app */,
 				D6086BF380E34C129F481A26 /* UTCTimeLookerSIT.app */,
+				46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +140,28 @@
 			productReference = 4646456B2E3786FD00A48FDB /* UTCTimeLooker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		46C2EDCE2EE03C0100E38D8B /* UTCTimeLookeriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C2EDD72EE03C0300E38D8B /* Build configuration list for PBXNativeTarget "UTCTimeLookeriOS" */;
+			buildPhases = (
+				46C2EDCB2EE03C0100E38D8B /* Sources */,
+				46C2EDCC2EE03C0100E38D8B /* Frameworks */,
+				46C2EDCD2EE03C0100E38D8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				46C2EDD02EE03C0100E38D8B /* UTCTimeLookeriOS */,
+			);
+			name = UTCTimeLookeriOS;
+			packageProductDependencies = (
+			);
+			productName = UTCTimeLookeriOS;
+			productReference = 46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9CCA660588E14F1C8E470313 /* UTCTimeLookerSIT */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 700B1E391FBA4FB4AFDE3CE7 /* Build configuration list for PBXNativeTarget "UTCTimeLookerSIT" */;
@@ -155,11 +192,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
+				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					4646456A2E3786FD00A48FDB = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					46C2EDCE2EE03C0100E38D8B = {
+						CreatedOnToolsVersion = 26.1;
 					};
 					9CCA660588E14F1C8E470313 = {
 						CreatedOnToolsVersion = 16.4;
@@ -184,6 +224,7 @@
 			targets = (
 				4646456A2E3786FD00A48FDB /* UTCTimeLooker */,
 				9CCA660588E14F1C8E470313 /* UTCTimeLookerSIT */,
+				46C2EDCE2EE03C0100E38D8B /* UTCTimeLookeriOS */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +241,13 @@
 				46C2EC7A2EE01AD000E38D8B /* AGENTS.md in Resources */,
 				46E5EB8F2E78146200F4615F /* RealseNote.md in Resources */,
 				46E5EB8D2E78117E00F4615F /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C2EDCD2EE03C0100E38D8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +269,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		464645672E3786FD00A48FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C2EDCB2EE03C0100E38D8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,6 +470,75 @@
 			};
 			name = Release;
 		};
+		46C2EDD82EE03C0300E38D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y355LMZA6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46C2EDD92EE03C0300E38D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y355LMZA6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		5792DCD5EAEC4AE682994534 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,6 +616,15 @@
 			buildConfigurations = (
 				464645782E3786FF00A48FDB /* Debug */,
 				464645792E3786FF00A48FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C2EDD72EE03C0300E38D8B /* Build configuration list for PBXNativeTarget "UTCTimeLookeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C2EDD82EE03C0300E38D8B /* Debug */,
+				46C2EDD92EE03C0300E38D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AppKit
+import UTCTimeCore
 
 struct ContentView: View {
     
@@ -186,4 +188,3 @@ struct TimeZoneRow: View {
 #Preview {
     ContentView()
 }
-

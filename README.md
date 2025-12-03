@@ -92,6 +92,8 @@ UTCTimeLooker/
     └── TimeParser.swift      # Time parsing utilities
 ```
 
+核心逻辑已抽象为 Swift Package：`Packages/UTCTimeCore`，可供多平台 Target 复用。
+
 ## Development
 
 ### Prerequisites

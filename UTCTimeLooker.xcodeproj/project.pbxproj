@@ -56,9 +56,9 @@
 		46C2EC772EE01AD000E38D8B /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		46C2EC782EE01AD000E38D8B /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
 		46C2EC7B2EE01B4E00E38D8B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		46C2EDC52EE03A2600E38D8B /* UTCTimeCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UTCTimeCore; path = Packages/UTCTimeCore; sourceTree = "<group>"; };
 		46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTCTimeLookeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C2EE102EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UTCTimeLookerWatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C2EE382EE03D6900E38D8B /* UTCTimeCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UTCTimeCore; path = Packages/UTCTimeCore; sourceTree = "<group>"; };
 		46E5EB8A2E78117400F4615F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46E5EB8C2E78117E00F4615F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		46E5EB8E2E78146200F4615F /* RealseNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RealseNote.md; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 				46C2EDD02EE03C0100E38D8B /* UTCTimeLookeriOS */,
 				46C2EE112EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App */,
 				4646456C2E3786FD00A48FDB /* Products */,
-				46C2EDC52EE03A2600E38D8B /* UTCTimeCore */,
 				46C2EDC62EE03A4600E38D8B /* Frameworks */,
+				46C2EE382EE03D6900E38D8B /* UTCTimeCore */,
 			);
 			sourceTree = "<group>";
 		};

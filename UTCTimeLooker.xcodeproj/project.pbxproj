@@ -17,6 +17,7 @@
 		46C2EC7C2EE01B4E00E38D8B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC7B2EE01B4E00E38D8B /* .gitignore */; };
 		46C2EDC82EE03A4600E38D8B /* UTCTimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 46C2EDC72EE03A4600E38D8B /* UTCTimeCore */; };
 		46C2EDCA2EE03A4F00E38D8B /* UTCTimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 46C2EDC92EE03A4F00E38D8B /* UTCTimeCore */; };
+		46C2EE1A2EE03CE300E38D8B /* UTCTimeLookerWatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46C2EE102EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46E5EB8B2E78117400F4615F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8A2E78117400F4615F /* README.md */; };
 		46E5EB8D2E78117E00F4615F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8C2E78117E00F4615F /* LICENSE */; };
 		46E5EB8F2E78146200F4615F /* RealseNote.md in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8E2E78146200F4615F /* RealseNote.md */; };
@@ -24,6 +25,30 @@
 		75D032F187A64DE080D53A11 /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC782EE01AD000E38D8B /* CLAUDE.md */; };
 		A73BFC048D4E4BC6953AAC09 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC7B2EE01B4E00E38D8B /* .gitignore */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46C2EE182EE03CE300E38D8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 464645632E3786FD00A48FDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C2EE0F2EE03CE100E38D8B;
+			remoteInfo = "UTCTimeLookerWatchOS Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46C2EE1E2EE03CE300E38D8B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				46C2EE1A2EE03CE300E38D8B /* UTCTimeLookerWatchOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4646456B2E3786FD00A48FDB /* UTCTimeLooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTCTimeLooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +58,7 @@
 		46C2EC7B2EE01B4E00E38D8B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		46C2EDC52EE03A2600E38D8B /* UTCTimeCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UTCTimeCore; path = Packages/UTCTimeCore; sourceTree = "<group>"; };
 		46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTCTimeLookeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C2EE102EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UTCTimeLookerWatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E5EB8A2E78117400F4615F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46E5EB8C2E78117E00F4615F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		46E5EB8E2E78146200F4615F /* RealseNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RealseNote.md; sourceTree = "<group>"; };
@@ -50,6 +76,11 @@
 			path = UTCTimeLookeriOS;
 			sourceTree = "<group>";
 		};
+		46C2EE112EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "UTCTimeLookerWatchOS Watch App";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +93,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		46C2EDCC2EE03C0100E38D8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C2EE0D2EE03CE100E38D8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,6 +129,7 @@
 				46E5EB8E2E78146200F4615F /* RealseNote.md */,
 				4646456D2E3786FD00A48FDB /* UTCTimeLooker */,
 				46C2EDD02EE03C0100E38D8B /* UTCTimeLookeriOS */,
+				46C2EE112EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App */,
 				4646456C2E3786FD00A48FDB /* Products */,
 				46C2EDC52EE03A2600E38D8B /* UTCTimeCore */,
 				46C2EDC62EE03A4600E38D8B /* Frameworks */,
@@ -103,6 +142,7 @@
 				4646456B2E3786FD00A48FDB /* UTCTimeLooker.app */,
 				D6086BF380E34C129F481A26 /* UTCTimeLookerSIT.app */,
 				46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */,
+				46C2EE102EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,10 +187,12 @@
 				46C2EDCB2EE03C0100E38D8B /* Sources */,
 				46C2EDCC2EE03C0100E38D8B /* Frameworks */,
 				46C2EDCD2EE03C0100E38D8B /* Resources */,
+				46C2EE1E2EE03CE300E38D8B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46C2EE192EE03CE300E38D8B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				46C2EDD02EE03C0100E38D8B /* UTCTimeLookeriOS */,
@@ -160,6 +202,28 @@
 			);
 			productName = UTCTimeLookeriOS;
 			productReference = 46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46C2EE0F2EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C2EE1B2EE03CE300E38D8B /* Build configuration list for PBXNativeTarget "UTCTimeLookerWatchOS Watch App" */;
+			buildPhases = (
+				46C2EE0C2EE03CE100E38D8B /* Sources */,
+				46C2EE0D2EE03CE100E38D8B /* Frameworks */,
+				46C2EE0E2EE03CE100E38D8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				46C2EE112EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App */,
+			);
+			name = "UTCTimeLookerWatchOS Watch App";
+			packageProductDependencies = (
+			);
+			productName = "UTCTimeLookerWatchOS Watch App";
+			productReference = 46C2EE102EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9CCA660588E14F1C8E470313 /* UTCTimeLookerSIT */ = {
@@ -201,6 +265,9 @@
 					46C2EDCE2EE03C0100E38D8B = {
 						CreatedOnToolsVersion = 26.1;
 					};
+					46C2EE0F2EE03CE100E38D8B = {
+						CreatedOnToolsVersion = 26.1;
+					};
 					9CCA660588E14F1C8E470313 = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -225,6 +292,7 @@
 				4646456A2E3786FD00A48FDB /* UTCTimeLooker */,
 				9CCA660588E14F1C8E470313 /* UTCTimeLookerSIT */,
 				46C2EDCE2EE03C0100E38D8B /* UTCTimeLookeriOS */,
+				46C2EE0F2EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +313,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		46C2EDCD2EE03C0100E38D8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C2EE0E2EE03CE100E38D8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46C2EE0C2EE03CE100E38D8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAF06B2EA1714D83958CA0C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +372,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46C2EE192EE03CE300E38D8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C2EE0F2EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App */;
+			targetProxy = 46C2EE182EE03CE300E38D8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		464645752E3786FF00A48FDB /* Debug */ = {
@@ -539,6 +629,73 @@
 			};
 			name = Release;
 		};
+		46C2EE1C2EE03CE300E38D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y355LMZA6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UTCTimeLookerWatchOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = CodexSessionViewer.UTCTimeLookeriOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Debug;
+		};
+		46C2EE1D2EE03CE300E38D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y355LMZA6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UTCTimeLookerWatchOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = CodexSessionViewer.UTCTimeLookeriOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Release;
+		};
 		5792DCD5EAEC4AE682994534 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -625,6 +782,15 @@
 			buildConfigurations = (
 				46C2EDD82EE03C0300E38D8B /* Debug */,
 				46C2EDD92EE03C0300E38D8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C2EE1B2EE03CE300E38D8B /* Build configuration list for PBXNativeTarget "UTCTimeLookerWatchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C2EE1C2EE03CE300E38D8B /* Debug */,
+				46C2EE1D2EE03CE300E38D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

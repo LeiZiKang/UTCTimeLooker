@@ -107,6 +107,9 @@ xcodebuild -project UTCTimeLooker.xcodeproj -scheme UTCTimeLooker -configuration
 # Release build
 xcodebuild -project UTCTimeLooker.xcodeproj -scheme UTCTimeLooker -configuration Release build
 
+# SIT build (separate bundle id to avoid replacing Prod)
+xcodebuild -project UTCTimeLooker.xcodeproj -scheme UTCTimeLookerSIT -configuration Debug build
+
 # Run tests
 xcodebuild test -project UTCTimeLooker.xcodeproj -scheme UTCTimeLooker
 ```

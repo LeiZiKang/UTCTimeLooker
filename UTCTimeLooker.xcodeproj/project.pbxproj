@@ -18,6 +18,7 @@
 		46C2EDC82EE03A4600E38D8B /* UTCTimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 46C2EDC72EE03A4600E38D8B /* UTCTimeCore */; };
 		46C2EDCA2EE03A4F00E38D8B /* UTCTimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 46C2EDC92EE03A4F00E38D8B /* UTCTimeCore */; };
 		46C2EE1A2EE03CE300E38D8B /* UTCTimeLookerWatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46C2EE102EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46C3C3BE2EE1C36800C39FD5 /* UTCTimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 46C3C3BD2EE1C36800C39FD5 /* UTCTimeCore */; };
 		46E5EB8B2E78117400F4615F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8A2E78117400F4615F /* README.md */; };
 		46E5EB8D2E78117E00F4615F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8C2E78117E00F4615F /* LICENSE */; };
 		46E5EB8F2E78146200F4615F /* RealseNote.md in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8E2E78146200F4615F /* RealseNote.md */; };
@@ -102,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C3C3BE2EE1C36800C39FD5 /* UTCTimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +216,7 @@
 			);
 			name = UTCTimeLookeriOS;
 			packageProductDependencies = (
+				46C3C3BD2EE1C36800C39FD5 /* UTCTimeCore */,
 			);
 			productName = UTCTimeLookeriOS;
 			productReference = 46C2EDCF2EE03C0100E38D8B /* UTCTimeLookeriOS.app */;
@@ -620,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y355LMZA6C;
@@ -636,8 +640,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS;
+				PRODUCT_BUNDLE_IDENTIFIER = levi.UTCTimeLookeriOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -658,6 +663,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y355LMZA6C;
@@ -674,8 +680,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS;
+				PRODUCT_BUNDLE_IDENTIFIER = levi.UTCTimeLookeriOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -704,13 +711,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = UTCTimeLookerWatchOS;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = CodexSessionViewer.UTCTimeLookeriOS;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = levi.UTCTimeLookeriOS;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = levi.UTCTimeLookeriOS.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -721,7 +728,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -737,13 +744,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = UTCTimeLookerWatchOS;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = CodexSessionViewer.UTCTimeLookeriOS;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = levi.UTCTimeLookeriOS;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodexSessionViewer.UTCTimeLookeriOS.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = levi.UTCTimeLookeriOS.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -755,7 +762,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -961,6 +968,10 @@
 			productName = UTCTimeCore;
 		};
 		46C2EDC92EE03A4F00E38D8B /* UTCTimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UTCTimeCore;
+		};
+		46C3C3BD2EE1C36800C39FD5 /* UTCTimeCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UTCTimeCore;
 		};

@@ -45,7 +45,7 @@ struct ContentView: View {
                                 viewModel.parseUTCInput(newValue)
                             }
                         
-                        Button(action: {
+                        AccessibilityButton(helpText: "Paste from clipboard", action: {
                             if let clipboardString = NSPasteboard.general.string(forType: .string) {
                                 viewModel.utcInput = clipboardString
                                 viewModel.parseUTCInput(clipboardString)
@@ -55,16 +55,14 @@ struct ContentView: View {
                                 .font(.title3)
                         }
                         .buttonStyle(BorderedButtonStyle())
-                        .help("Paste from clipboard")
                         
-                        Button(action: {
+                        AccessibilityButton(helpText: "Use current time", action: {
                             viewModel.refreshWithCurrentTime()
                         }) {
                             Image(systemName: "arrow.clockwise")
                                 .font(.title3)
                         }
                         .buttonStyle(BorderedButtonStyle())
-                        .help("Use current time")
                     }
                     
                     if !viewModel.errorMessage.isEmpty {
@@ -115,11 +113,11 @@ struct ContentView: View {
                             Text("Other Time Zones")
                                 .font(.headline)
                             Spacer()
-                            Button("Add Time Zone", systemImage: "plus.app", action: viewModel.addTimeZone)
-                                .labelStyle(.iconOnly)
-                                .buttonStyle(BorderedButtonStyle())
-                                .help("Add Time Zone")
-                            // TODO: write a base Button, must have a help text to make my app friendly to disable people
+                            AccessibilityButton(helpText: "Add Time Zone", action: viewModel.addTimeZone) {
+                                Label("Add Time Zone", systemImage: "plus.app")
+                            }
+                            .labelStyle(.iconOnly)
+                            .buttonStyle(BorderedButtonStyle())
                         }
                         .padding(.horizontal)
                         
@@ -178,12 +176,12 @@ struct TimeZoneRow: View {
         .background(Color.gray.opacity(0.05))
         .cornerRadius(8)
         .contextMenu {
-            Button("Copy Time") {
+            AccessibilityButton("Copy Time", helpText: "Copy Time") {
                 NSPasteboard.general.clearContents()
                 NSPasteboard.general.setString(time, forType: .string)
             }
             
-            Button("Copy with Timezone") {
+            AccessibilityButton("Copy with Timezone", helpText: "Copy with Timezone") {
                 NSPasteboard.general.clearContents()
                 NSPasteboard.general.setString("\(time) (\(timeZoneInfo.identifier) \(offset))", forType: .string)
             }

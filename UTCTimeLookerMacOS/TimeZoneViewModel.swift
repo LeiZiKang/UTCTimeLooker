@@ -63,4 +63,8 @@ class TimeZoneViewModel {
         utcInput = service.defaultUTCString(referenceDate: now)
         parseUTCInput(utcInput)
     }
+    
+    func addTimeZone() {
+        
+    }
 }

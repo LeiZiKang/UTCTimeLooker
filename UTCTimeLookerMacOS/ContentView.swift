@@ -114,6 +114,12 @@ struct ContentView: View {
                                 .foregroundColor(.green)
                             Text("Other Time Zones")
                                 .font(.headline)
+                            Spacer()
+                            Button("Add Time Zone", systemImage: "plus.app", action: viewModel.addTimeZone)
+                                .labelStyle(.iconOnly)
+                                .buttonStyle(BorderedButtonStyle())
+                                .help("Add Time Zone")
+                            // TODO: write a base Button, must have a help text to make my app friendly to disable people
                         }
                         .padding(.horizontal)
                         

@@ -10,8 +10,8 @@
 		08A157B8F3104EAAAAE47115 /* RealseNote.md in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8E2E78146200F4615F /* RealseNote.md */; };
 		1879616DDC8443D991FB36D2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8A2E78117400F4615F /* README.md */; };
 		306FF301C4CC44FFAB3722F4 /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC772EE01AD000E38D8B /* AGENTS.md */; };
-		41ACC51EFD034A599E6BA465 /* FuturePLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC752EE0190E00E38D8B /* FuturePLAN.md */; };
-		46C2EC762EE0190E00E38D8B /* FuturePLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC752EE0190E00E38D8B /* FuturePLAN.md */; };
+		41ACC51EFD034A599E6BA465 /* PLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC752EE0190E00E38D8B /* PLAN.md */; };
+		46C2EC762EE0190E00E38D8B /* PLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC752EE0190E00E38D8B /* PLAN.md */; };
 		46C2EC792EE01AD000E38D8B /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC782EE01AD000E38D8B /* CLAUDE.md */; };
 		46C2EC7A2EE01AD000E38D8B /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC772EE01AD000E38D8B /* AGENTS.md */; };
 		46C2EC7C2EE01B4E00E38D8B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC7B2EE01B4E00E38D8B /* .gitignore */; };
@@ -53,7 +53,7 @@
 
 /* Begin PBXFileReference section */
 		4646456B2E3786FD00A48FDB /* UTCTimeLooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTCTimeLooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46C2EC752EE0190E00E38D8B /* FuturePLAN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FuturePLAN.md; sourceTree = "<group>"; };
+		46C2EC752EE0190E00E38D8B /* PLAN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PLAN.md; sourceTree = "<group>"; };
 		46C2EC772EE01AD000E38D8B /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		46C2EC782EE01AD000E38D8B /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
 		46C2EC7B2EE01B4E00E38D8B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 				46C2EC7B2EE01B4E00E38D8B /* .gitignore */,
 				46C2EC772EE01AD000E38D8B /* AGENTS.md */,
 				46C2EC782EE01AD000E38D8B /* CLAUDE.md */,
-				46C2EC752EE0190E00E38D8B /* FuturePLAN.md */,
+				46C2EC752EE0190E00E38D8B /* PLAN.md */,
 				46E5EB8C2E78117E00F4615F /* LICENSE */,
 				46E5EB8A2E78117400F4615F /* README.md */,
 				46E5EB8E2E78146200F4615F /* RealseNote.md */,
@@ -347,7 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C2EC7C2EE01B4E00E38D8B /* .gitignore in Resources */,
-				46C2EC762EE0190E00E38D8B /* FuturePLAN.md in Resources */,
+				46C2EC762EE0190E00E38D8B /* PLAN.md in Resources */,
 				46E5EB8B2E78117400F4615F /* README.md in Resources */,
 				46C2EC792EE01AD000E38D8B /* CLAUDE.md in Resources */,
 				46C2EC7A2EE01AD000E38D8B /* AGENTS.md in Resources */,
@@ -382,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73BFC048D4E4BC6953AAC09 /* .gitignore in Resources */,
-				41ACC51EFD034A599E6BA465 /* FuturePLAN.md in Resources */,
+				41ACC51EFD034A599E6BA465 /* PLAN.md in Resources */,
 				1879616DDC8443D991FB36D2 /* README.md in Resources */,
 				75D032F187A64DE080D53A11 /* CLAUDE.md in Resources */,
 				306FF301C4CC44FFAB3722F4 /* AGENTS.md in Resources */,

@@ -6,18 +6,17 @@
 //
 
 import SwiftUI
+import UTCTimeCore
 
 struct ContentView: View {
+    @State private var model = WatchTimeModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        WatchHomeView(model: model)
     }
 }
+
+
 
 #Preview {
     ContentView()

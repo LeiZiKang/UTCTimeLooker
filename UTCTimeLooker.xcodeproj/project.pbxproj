@@ -11,6 +11,8 @@
 		1879616DDC8443D991FB36D2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46E5EB8A2E78117400F4615F /* README.md */; };
 		306FF301C4CC44FFAB3722F4 /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC772EE01AD000E38D8B /* AGENTS.md */; };
 		41ACC51EFD034A599E6BA465 /* PLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC752EE0190E00E38D8B /* PLAN.md */; };
+		468B985C2F037B4E0026B1FF /* UTCTimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 468B985B2F037B4E0026B1FF /* UTCTimeCore */; };
+		468B98622F038AB80026B1FF /* UTCTimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 468B98612F038AB80026B1FF /* UTCTimeCore */; };
 		46C2EC762EE0190E00E38D8B /* PLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC752EE0190E00E38D8B /* PLAN.md */; };
 		46C2EC792EE01AD000E38D8B /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC782EE01AD000E38D8B /* CLAUDE.md */; };
 		46C2EC7A2EE01AD000E38D8B /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 46C2EC772EE01AD000E38D8B /* AGENTS.md */; };
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468B985C2F037B4E0026B1FF /* UTCTimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468B98622F038AB80026B1FF /* UTCTimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +243,7 @@
 			);
 			name = "UTCTimeLookerWatchOS Watch App";
 			packageProductDependencies = (
+				468B985B2F037B4E0026B1FF /* UTCTimeCore */,
 			);
 			productName = "UTCTimeLookerWatchOS Watch App";
 			productReference = 46C2EE102EE03CE100E38D8B /* UTCTimeLookerWatchOS Watch App.app */;
@@ -261,6 +266,7 @@
 			);
 			name = UTCTimeLookeriPadOS;
 			packageProductDependencies = (
+				468B98612F038AB80026B1FF /* UTCTimeCore */,
 			);
 			productName = UTCTimeLookeriPadOS;
 			productReference = 46C2EE3D2EE03F7000E38D8B /* UTCTimeLookeriPadOS.app */;
@@ -963,6 +969,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		468B985B2F037B4E0026B1FF /* UTCTimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UTCTimeCore;
+		};
+		468B98612F038AB80026B1FF /* UTCTimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UTCTimeCore;
+		};
 		46C2EDC72EE03A4600E38D8B /* UTCTimeCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UTCTimeCore;

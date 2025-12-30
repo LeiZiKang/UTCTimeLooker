@@ -92,6 +92,8 @@ UTCTimeLooker/
     └── TimeParser.swift      # Time parsing utilities
 ```
 
+核心逻辑已抽象为 Swift Package：`Packages/UTCTimeCore`，可供多平台 Target 复用。
+
 ## Development
 
 ### Prerequisites
@@ -106,6 +108,9 @@ xcodebuild -project UTCTimeLooker.xcodeproj -scheme UTCTimeLooker -configuration
 
 # Release build
 xcodebuild -project UTCTimeLooker.xcodeproj -scheme UTCTimeLooker -configuration Release build
+
+# SIT build (separate bundle id to avoid replacing Prod)
+xcodebuild -project UTCTimeLooker.xcodeproj -scheme UTCTimeLookerSIT -configuration Debug build
 
 # Run tests
 xcodebuild test -project UTCTimeLooker.xcodeproj -scheme UTCTimeLooker
